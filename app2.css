@@ -1,0 +1,87 @@
+
+@font-face {
+    font-family: bold-font;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: regular-font;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: hsl(234, 29%, 20%);
+}
+
+
+.container{
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+}
+.content{
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+h1{
+    font-family: bold-font;
+    padding: 8px 0;
+}
+p{
+    font-family: regular-font;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+button{
+    margin: 5% 0;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding:15px 10px;
+    background-color: RGB(36, 39, 66);
+    border: none;
+    border-radius: 10px ;
+    color: white;
+    font-family: regular-font;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 500ms ease-in-outs;
+}
+button:hover{
+    background: rgb(236,97,117);
+    background: linear-gradient(90deg, rgba(236,97,117,1) 12%, rgba(237,113,76,1) 95%);
+    -webkit-box-shadow: 0px 13px 48px 0px rgba(236,97,117,1);
+    -moz-box-shadow: 0px 13px 48px 0px rgba(236,97,117,1);
+    box-shadow: 0px 13px 48px 0px rgba(237,113,76,1) ;
+}
+
+@media (max-width: 800px) {
+
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .content{
+        justify-content: space-between;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+
+}
